@@ -18,62 +18,28 @@
       background-size: cover;
     }
 
-    /* Contenedor principal centrado */
-    .container {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* vertical */
-      align-items: center;     /* horizontal */
-      text-align: center;
-      padding: 20px;
-      background: rgba(0,0,0,0.3); /* oscurece un poco para mejor lectura */
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 4px black;
-    }
-
-    .countdown {
-      font-size: 2rem;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 20px 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.7);
-      min-width: 250px;
-    }
-
-    .ad-placeholder {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: rgba(0,0,0,0.5);
-      color: #fff;
-      padding: 10px;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      max-width: 180px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.7);
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      .countdown {
-        font-size: 1.2rem;
-        padding: 15px 20px;
-        min-width: auto;
-      }
-
-      .ad-placeholder {
-        max-width: 140px;
-        font-size: 0.8rem;
-      }
-    }
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* altura total del viewport */
+  flex-direction: column;
+  color: white; /* texto blanco para que se vea sobre el fondo */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+.countdown {
+  font-size: 3rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  user-select: none;
+}
+h1 {
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px black;
+}
   </style>
 </head>
 <body>
