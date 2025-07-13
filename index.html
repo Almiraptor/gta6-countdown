@@ -6,28 +6,29 @@
   <title>GTA 6 Countdown | How Much Time Left</title>
   <meta name="description" content="Countdown to GTA 6 release date. See how much time is left until the next Grand Theft Auto arrives.">
   <style>
-    /* Que html y body llenen toda la pantalla */
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif;
     }
 
     body {
-      /* Imagen de fondo */
       background: url('gta6.jpg') no-repeat center center fixed;
       background-size: cover;
+      color: white;
+    }
 
-      /* Centramos el contenido */
+    /* Contenedor principal centrado */
+    .container {
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center; /* vertical */
       align-items: center;     /* horizontal */
-
-      height: 100vh; /* viewport height */
-      color: white;
-      font-family: Arial, sans-serif;
-      position: relative; /* Para posicionar el anuncio */
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.3); /* oscurece un poco para mejor lectura */
     }
 
     h1 {
@@ -38,16 +39,15 @@
 
     .countdown {
       font-size: 2rem;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.7);
       padding: 20px 40px;
       border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.7);
-      text-align: center;
-      min-width: 200px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.9);
+      min-width: 250px;
     }
 
     .ad-placeholder {
-      position: fixed; /* fija en la pantalla */
+      position: fixed;
       bottom: 20px;
       right: 20px;
       background: rgba(0,0,0,0.5);
@@ -56,7 +56,6 @@
       border-radius: 8px;
       font-size: 0.9rem;
       max-width: 180px;
-      text-align: center;
       box-shadow: 0 0 10px rgba(0,0,0,0.7);
     }
 
@@ -70,7 +69,7 @@
         padding: 15px 20px;
         min-width: auto;
       }
-      
+
       .ad-placeholder {
         max-width: 140px;
         font-size: 0.8rem;
@@ -79,8 +78,10 @@
   </style>
 </head>
 <body>
-  <h1>GTA 6 Countdown</h1>
-  <div class="countdown" id="countdown">Loading...</div>
+  <div class="container">
+    <h1>GTA 6 Countdown</h1>
+    <div class="countdown" id="countdown">Loading...</div>
+  </div>
 
   <div class="ad-placeholder">
     <!-- Aquí puedes poner tu código de anuncio de Google AdSense -->
@@ -113,8 +114,4 @@
   </script>
 </body>
 </html>
-
-    updateCountdown();
-  </script>
-</body>
 </html>
